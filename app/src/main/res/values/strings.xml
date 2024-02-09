@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Netclan UI Clone</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="textfiedItem1">Available | Hey Let us Connect</string>
+    <string name="textfiedItem2">Away | Stay Discrete And Watch</string>
+    <string name="textfiedItem3">Busy | Do Not Disturb | Will Catch Up Later</string>
+    <string name="textfiedItem4">SOS | Emergecy! Need Assistance! HELP</string>
+    <string name="defaultStatus">Hi community! I am open to new connections "😊"</string>
+    <string name="businessStatus">Hi community! I am available at your service!</string>
+    <string name="about"> Hello! I\'m Aditya Kumar, an aspiring Android App Developer with a keen interest in creating innovative and impactful mobile applications. A dedicated learner and enthusiast in the world of Android development, I am eager to embark on a dynamic career in the field.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notice">Sorry, we could not find any user near you. \n Try increasing your search radius.</string>
+
+
+</resources>

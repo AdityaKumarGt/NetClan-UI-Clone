@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Netclan" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/background</item>
+        <item name="colorSecondaryVariant">@color/background</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/background</item>
+        <!-- Customize your theme here. -->
+        <item name="android:editTextColor">@color/background</item>
+        <item name="android:textColorHint">@color/editTextHint</item>
+
+
+    </style>
+
+    <style name="AppTheme.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="android:itemTextAppearance">@style/AppTheme.NavigationView.ItemText</item>
+        <item name="itemIconTint">@color/background</item>
+    </style>
+
+    <style name="AppTheme.NavigationView.ItemText" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@color/background</item>
+    </style>
+
+    <style name="OutlinedBoxDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@android:color/black</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="CustomSeekBarStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="colorControlNormal">@color/background</item>
+        <item name="colorControlActivated">@color/background</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+
+    <!-- Define your custom tooltip style -->
+    <style name="My_Tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <!-- background color of the Tooltip -->
+        <item name="backgroundTint">@color/background</item>
+        <item name="tooltipText">@color/white</item>
+    </style>
+
+
+
+    <style name="MyDropdownStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+</resources>

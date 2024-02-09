@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="Navigation_View">
+
+<group
+    android:checkableBehavior="single">
+
+
+    <item
+        android:id="@+id/nav_myProfile"
+        android:title="My Profile"
+        android:icon="@drawable/user"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_myNetwork"
+        android:title="My Network"
+        android:icon="@drawable/group"
+        android:checked="true"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_switchToBusiness"
+        android:title="Switch to Business"
+        android:icon="@drawable/suitcase"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_switchToMerchant"
+        android:title="Switch to Merchant"
+        android:icon="@drawable/store"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_Dating"
+        android:title="Dating"
+        android:icon="@drawable/heart"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_matrimony"
+        android:title="Matrimony"
+        android:icon="@drawable/matrimony"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_buySellRent"
+        android:title="Buy-Sell-Rent"
+        android:icon="@drawable/bags"
+        android:textColor="@color/background"/>
+    <item
+        android:id="@+id/nav_jobs"
+        android:title="Jobs"
+        android:icon="@drawable/job"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_businessCards"
+        android:title="Business Cards"
+        android:icon="@drawable/cards"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_netclanGroups"
+        android:title="Netclan Groups"
+        android:icon="@drawable/hashtag"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_notes"
+        android:title="Notes"
+        android:icon="@drawable/edit"
+        android:textColor="@color/background"/>
+
+    <item
+        android:id="@+id/nav_liveLocations"
+        android:title="Live Locations"
+        android:icon="@drawable/pin"
+        android:textColor="@color/background"/>
+
+
+</group>
+</menu>

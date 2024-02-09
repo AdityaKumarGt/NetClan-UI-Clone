@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_explore">
+
+    <fragment
+        android:id="@+id/navigation_explore"
+        android:name="com.aditya.netclan.ui.parent_fragments.ExploreFragment"
+        android:label="Explore"
+        tools:layout="@layout/fragment_explore" />
+
+    <fragment
+        android:id="@+id/navigation_network"
+        android:name="com.aditya.netclan.ui.parent_fragments.NetworkFragment"
+        android:label="Network"
+        tools:layout="@layout/fragment_network" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.aditya.netclan.ui.parent_fragments.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_contacts"
+        android:name="com.aditya.netclan.ui.parent_fragments.ContactsFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_contacts" />
+
+
+    <fragment
+        android:id="@+id/navigation_groups"
+        android:name="com.aditya.netclan.ui.parent_fragments.GroupsFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_groups" />
+</navigation>

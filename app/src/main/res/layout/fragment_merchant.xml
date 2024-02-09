@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".ui.child_fragments.explore_fragments.MerchantFragment">
+
+<LinearLayout
+    android:id="@+id/parentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginHorizontal="@dimen/_22sdp"
+            android:layout_weight="1"
+            android:background="@drawable/searchview_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/baseline_search_24" />
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:hint="Search"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@color/grey"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+
+            <ImageView
+                android:id="@+id/cut"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:layout_marginRight="@dimen/_12ssp"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/close"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_22sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/filter_icon" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:src="@drawable/explore_icon2"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/textBackground"
+        android:textSize="@dimen/_13ssp"
+        android:gravity="center_horizontal"
+        android:text="Your explore list is Empty!"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/itemText"
+        android:textSize="@dimen/_13ssp"
+        android:gravity="center_horizontal"
+        android:text="@string/notice"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:padding="@dimen/_4sdp"
+        android:layout_marginVertical="@dimen/_22ssp"
+        android:layout_marginHorizontal="@dimen/_60sdp"
+        android:gravity="center_horizontal"
+        android:backgroundTint="@color/background"
+        android:background="@drawable/text_purpose_bg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center_horizontal"
+            android:text="INCREASE RADIUS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/datingIcon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:backgroundTint="#FFC400"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:src="@drawable/heart"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toTopOf="@id/matrimonyIcon"
+        app:layout_constraintEnd_toEndOf="@+id/matrimonyIcon"
+        app:tint="@color/background" />
+    <TextView
+        android:id="@+id/dating_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        app:layout_constraintRight_toLeftOf="@id/datingIcon"
+        app:layout_constraintTop_toTopOf="@id/datingIcon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Dating"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/matrimonyIcon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:backgroundTint="#FFC400"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:src="@drawable/matrimony"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toTopOf="@id/buySellRent_icon"
+        app:layout_constraintEnd_toEndOf="@+id/buySellRent_icon"
+        app:tint="@color/background" />
+    <TextView
+        android:id="@+id/matrimony_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        app:layout_constraintRight_toLeftOf="@id/matrimonyIcon"
+        app:layout_constraintTop_toTopOf="@id/matrimonyIcon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Matrimony"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buySellRent_icon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:backgroundTint="#FFC400"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:src="@drawable/bags"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toTopOf="@id/businessCardsIcon"
+        app:layout_constraintEnd_toEndOf="@+id/businessCardsIcon"
+        app:tint="@color/background" />
+    <TextView
+        android:id="@+id/buySellRent_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        app:layout_constraintRight_toLeftOf="@id/buySellRent_icon"
+        app:layout_constraintTop_toTopOf="@id/buySellRent_icon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Buy-Sell-Rent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/businessCardsIcon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:backgroundTint="#FFC400"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:src="@drawable/cards"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toTopOf="@id/groupsIcon"
+        app:layout_constraintEnd_toEndOf="@+id/groupsIcon"
+        app:tint="@color/background" />
+    <TextView
+        android:id="@+id/businessCard_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        app:layout_constraintRight_toLeftOf="@id/businessCardsIcon"
+        app:layout_constraintTop_toTopOf="@id/businessCardsIcon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Business Cards"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/groupsIcon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:backgroundTint="#FFC400"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:src="@drawable/hashtag"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toTopOf="@id/jobsIcon"
+        app:layout_constraintEnd_toEndOf="@+id/jobsIcon"
+        app:tint="@color/background" />
+    <TextView
+        android:id="@+id/groups_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        app:layout_constraintRight_toLeftOf="@id/groupsIcon"
+        app:layout_constraintTop_toTopOf="@id/groupsIcon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Netclan Groups"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/jobsIcon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:backgroundTint="#FFC400"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:src="@drawable/job"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toTopOf="@id/notesIcon"
+        app:layout_constraintEnd_toEndOf="@+id/notesIcon"
+        app:tint="@color/background" />
+    <TextView
+        android:id="@+id/jobs_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        app:layout_constraintRight_toLeftOf="@id/jobsIcon"
+        app:layout_constraintTop_toTopOf="@id/jobsIcon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Jobs"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/notesIcon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:backgroundTint="#FFC400"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:src="@drawable/edit"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toTopOf="@id/addIcon"
+        app:layout_constraintEnd_toEndOf="@+id/addIcon"
+        app:tint="@color/background" />
+    <TextView
+        android:id="@+id/notes_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        app:layout_constraintRight_toLeftOf="@id/notesIcon"
+        app:layout_constraintTop_toTopOf="@id/notesIcon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Notes"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addIcon"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:elevation="6dp"
+        app:borderWidth="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabCustomSize="@dimen/_45sdp"
+        android:backgroundTint="@color/background2"
+        app:tint="@android:color/white"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

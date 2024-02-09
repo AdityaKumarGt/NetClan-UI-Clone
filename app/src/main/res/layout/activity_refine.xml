@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.activities.RefineActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/background"
+        android:elevation="4dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:src="@drawable/baseline_keyboard_arrow_left_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Refine"
+                android:layout_weight="45"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_16ssp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:text="Select your availabilty"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@color/white"
+                    style="@style/OutlinedBoxDropdownMenu">
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_complete_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textfiedItem1"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/_10sdp"
+                        style="@style/MyDropdownStyle"
+                        android:inputType="none"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:text="Add Your Status"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    />
+                <EditText
+                    android:id="@+id/roundedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/defaultStatus"
+                    android:textColor="@color/background"
+                    android:padding="10dp"
+                    android:maxLength="250"
+                    android:background="@drawable/edittexxt_bg"/>
+
+                <TextView
+                    android:id="@+id/characterCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:textColor="@color/textBackground"
+                    android:textSize="@dimen/_10ssp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:text="Select Hyper local Distance"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <com.google.android.material.slider.RangeSlider
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0"
+                    app:trackColorActive="@color/background"
+                    app:trackColorInactive="@color/grey"
+                    app:thumbColor="@color/background"
+                    app:labelStyle="@style/My_Tooltip"
+                    app:labelBehavior="visible"
+                    app:haloColor="@android:color/transparent"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="0 Km"
+                        android:layout_marginVertical="@dimen/_8sdp"
+                        android:textColor="@color/textBackground"
+                        android:textSize="@dimen/_10ssp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="100 Km"
+                        android:layout_marginVertical="@dimen/_8sdp"
+                        android:textColor="@color/textBackground"
+                        android:textSize="@dimen/_10ssp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:text="Select Purpose"
+                    android:textColor="@color/background"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+                    <androidx.constraintlayout.helper.widget.Flow
+                        android:id="@+id/flow1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        app:flow_horizontalBias="0"
+                        app:constraint_referenced_ids="coffeeBG,businessBG,hobbiesBG,friendshipBG,moviesBG,dinningBG, datingBG, matrimonyBG"
+                        app:flow_horizontalGap="@dimen/_10sdp"
+                        app:flow_verticalGap="@dimen/_10sdp"
+                        app:flow_horizontalStyle="packed"
+                        app:flow_verticalBias="0"
+                        app:flow_wrapMode="chain"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/coffeeBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:background="@drawable/colordtext_purpose_bg">
+
+                        <TextView
+                            android:id="@+id/coffeTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_4sdp"
+                            android:gravity="center_horizontal"
+                            android:text="Coffee"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/businessBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:background="@drawable/colordtext_purpose_bg">
+                        <TextView
+                            android:id="@+id/businessTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_4sdp"
+                            android:gravity="center_horizontal"
+                            android:text="Business"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hobbiesBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:background="@drawable/text_purpose_bg">
+                        <TextView
+                            android:id="@+id/hobbiesTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_4sdp"
+                            android:gravity="center_horizontal"
+                            android:text="Hobbies"
+                            android:textColor="@color/textBackground"
+                            android:textSize="@dimen/_11sdp"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/friendshipBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:background="@drawable/colordtext_purpose_bg">
+
+                        <TextView
+                            android:id="@+id/friendshipTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_4sdp"
+                            android:gravity="center_horizontal"
+                            android:text="Friendship"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/moviesBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:background="@drawable/text_purpose_bg">
+                        <TextView
+                            android:id="@+id/moviesTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_4sdp"
+                            android:gravity="center_horizontal"
+                            android:text="Movies"
+                            android:textColor="@color/textBackground"
+                            android:textSize="@dimen/_11sdp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dinningBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:background="@drawable/text_purpose_bg">
+                        <TextView
+                            android:id="@+id/dinningTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_4sdp"
+                            android:gravity="center_horizontal"
+                            android:text="Dinning"
+                            android:textColor="@color/textBackground"
+                            android:textSize="@dimen/_11sdp"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/datingBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:background="@drawable/text_purpose_bg">
+
+                        <TextView
+                            android:id="@+id/datingTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_4sdp"
+                            android:gravity="center_horizontal"
+                            android:text="Dating"
+                            android:textColor="@color/textBackground"
+                            android:textSize="@dimen/_11sdp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/matrimonyBG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:background="@drawable/text_purpose_bg">
+                        <TextView
+                            android:id="@+id/matrimonyTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_4sdp"
+                            android:gravity="center_horizontal"
+                            android:text="Matrimony"
+                            android:textColor="@color/textBackground"
+                            android:textSize="@dimen/_11sdp"
+                            />
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:gravity="center_horizontal"
+                        android:backgroundTint="@color/background"
+                        android:background="@drawable/text_purpose_bg">
+                        <TextView
+                            android:id="@+id/save"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_4sdp"
+                            android:gravity="center_horizontal"
+                            android:text="Save &amp; Explore"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

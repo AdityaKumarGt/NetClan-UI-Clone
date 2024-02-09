@@ -21,6 +21,9 @@ Netclan can be used for connecting unconnected users around you, allows chatting
 <img src="https://github.com/AdityaKumarGt/NetClan-UI-Clone/assets/121026525/a37a706c-a19a-4237-a160-c8217cc9e663" alt="AppScreen" width="150"> 
 <img src="https://github.com/AdityaKumarGt/NetClan-UI-Clone/assets/121026525/38421273-4903-4dc4-a14e-66cc03ed9037" alt="AppScreen" width="150"> 
 <img src="https://github.com/AdityaKumarGt/NetClan-UI-Clone/assets/121026525/862806dc-18f8-4b5b-a454-5a0ce0bf6a77" alt="AppScreen" width="150"> 
+<img src="https://github.com/AdityaKumarGt/NetClan-UI-Clone/assets/121026525/af572618-8d12-4220-a30e-879bd358f21f" alt="AppScreen" width="150"> 
+<img src="https://github.com/AdityaKumarGt/NetClan-UI-Clone/assets/121026525/b1eb3f79-f17b-42b6-b238-411a46ee59bf" alt="AppScreen" width="150"> 
+
 
 
 * This UI clone is just for educational or practice purposes and is not the official NetClan app. All official rights are reserved to its Founders/Owners.

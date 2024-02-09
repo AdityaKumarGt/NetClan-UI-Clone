@@ -424,7 +424,7 @@
                                 android:layout_weight="1"
                                 android:textColor="@color/background"
                                 android:textSize="@dimen/_14ssp"
-                                android:text="Smokes">
+                                android:text="Drinks">
 
                             </TextView>
 

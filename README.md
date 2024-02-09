@@ -25,6 +25,6 @@ Netclan can be used for connecting unconnected users around you, allows chatting
 
 * This UI clone is just for educational or practice purposes and is not the official NetClan app. All official rights are reserved to its Founders/Owners.
 
-#### To know more about NetClan, please refer its linkedIn page link: https://www.linkedin.com/company/netclan/
+#### To know more about NetClan, please refer its linkedIn page: https://www.linkedin.com/company/netclan/
  
-#### Official NetClan Explorer play store link: https://play.google.com/store/apps/details?id=com.netclan.netclan&hl=en&gl=US
+#### Official NetClan Explorer Google play store link: https://play.google.com/store/apps/details?id=com.netclan.netclan&hl=en&gl=US

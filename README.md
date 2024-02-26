@@ -31,4 +31,3 @@ Netclan can be used for connecting unconnected users around you, allows chatting
 
 #### To know more about NetClan, please refer its linkedIn page: https://www.linkedin.com/company/netclan/
  
-#### Official NetClan Explorer Google play store link: https://play.google.com/store/apps/details?id=com.netclan.netclan&hl=en&gl=US

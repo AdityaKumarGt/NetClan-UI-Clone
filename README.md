@@ -24,6 +24,8 @@ Netclan can be used for connecting unconnected users around you, allows chatting
 <img src="https://github.com/AdityaKumarGt/NetClan-UI-Clone/assets/121026525/af572618-8d12-4220-a30e-879bd358f21f" alt="AppScreen" width="150"> 
 <img src="https://github.com/AdityaKumarGt/NetClan-UI-Clone/assets/121026525/b1eb3f79-f17b-42b6-b238-411a46ee59bf" alt="AppScreen" width="150"> 
 
+## Video Demo
+https://github.com/AdityaKumarGt/NetClan-UI-Clone/assets/121026525/e813dad9-c8c0-4410-b22a-64770021205d
 
 
 
